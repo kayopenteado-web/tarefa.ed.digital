@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #6b2d5c;
+    background-color: #003b7a;
     color: white;
     text-align: center;
     padding: 30px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    color: #6b2d5c;
+    color: #003b7a;
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 }
 
 main {
-    wifdth: 80%;
+    width: 80%;
     margin: auto;
 }
 
@@ -34,6 +34,7 @@ section {
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
+    border-top: 5px solid #d71920;
 }
 
 img {
@@ -44,10 +45,25 @@ img {
     border-radius: 12px;
 }
 
-figcaption { 
+figcaption {
     text-align: center;
-    font-size; 14px;
+    font-size: 14px;
     color: #555555;
-    margin-top: 8px
+    margin-top: 8px;
 }
 
+.card {
+    background-color: #f4f1ea;
+    border-left: 5px solid #d71920;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #003b7a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 5px solid #d71920;
+}

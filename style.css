@@ -1,28 +1,30 @@
 body {
     background-color: #eef5e8;
-    color: #222222;
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
     background-color: #176b3a;
-    color: black;
+    color: white;
     text-align: center;
     padding: 30px;
 }
 
 h1 {
     font-size: 40px;
+    color: white;
 }
 
 h2 {
-    color: #176b3a;
+    color: white;
 }
 
 p {
     font-size: 18px;
     line-height: 1.6;
+    color: white;
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     background-color: #2f8f4e;
     padding: 10px 15px;
@@ -50,7 +52,7 @@ main {
 
 section {
     background-color: black;
-    color: black;
+    color: white;
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
@@ -67,13 +69,13 @@ img {
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: black;
+    color: white;
     margin-top: 8px;
 }
 
 .card {
     background-color: black;
-    color: black;
+    color: white;
     padding: 15px;
     margin: 15px 0;
     border-left: 6px solid #176b3a;
@@ -81,13 +83,13 @@ figcaption {
 }
 
 .card h3 {
-    color: #176b3a;
+    color: white;
     margin-top: 0;
 }
 
 footer {
     background-color: black;
-    color: black;
+    color: white;
     text-align: center;
     padding: 20px;
     margin-top: 30px;

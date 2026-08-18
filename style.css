@@ -1,23 +1,24 @@
+```css
 body {
-    background-color: #f4f1ea;
+    background-color: #eef5e8;
     color: #222222;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #6b2d5c;
+    background-color: #176b3a;
     color: white;
     text-align: center;
     padding: 30px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 h2 {
-    color: #6b2d5c;
+    color: #176b3a;
 }
 
 p {
@@ -32,7 +33,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    background-color: #8d4d73;
+    background-color: #2f8f4e;
     padding: 10px 15px;
     border-radius: 8px;
     margin: 5px;
@@ -40,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #7c2f5d;
+    background-color: #0e522c;
 }
 
 main {
@@ -71,14 +72,15 @@ figcaption {
 }
 
 .card {
-    background-color: #f3d5df;
+    background-color: #dcebd5;
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid #6b2d5c;
+    border-left: 6px solid #176b3a;
     border-radius: 10px;
 }
 
 .card h3 {
+    color: #176b3a;
     margin-top: 0;
 }
 
@@ -89,3 +91,4 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+```

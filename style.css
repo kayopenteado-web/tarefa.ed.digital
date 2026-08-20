@@ -10,6 +10,7 @@ header {
     color: #ffd700;
     text-align: center;
     padding: 30px;
+    border-bottom: 4px solid #ffd700;
 }
 
 h1 {
@@ -41,10 +42,14 @@ p {
     color: white;
 }
 
+strong {
+    color: #ffd700;
+}
+
 footer {
     background-color: #1f4024;
     color: white;
     text-align: center;
     padding: 20px;
-    border-top: 3px solid #ffd700;
+    border-top: 4px solid #ffd700;
 }

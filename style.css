@@ -1,35 +1,20 @@
 body {
     background-color: #2f5d34;
-    color: white;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
     background-color: #1f4024;
-    color: #ffd700;
+    color: white;
     text-align: center;
     padding: 30px;
-    border-bottom: 4px solid #ffd700;
 }
 
 h1 {
     font-size: 36px;
     color: #ffd700;
-}
-
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-}
-
-section {
-    background-color: #3d7a46;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid #ffd700;
 }
 
 h2 {
@@ -39,11 +24,71 @@ h2 {
 p {
     font-size: 18px;
     line-height: 1.6;
-    color: white;
 }
 
-strong {
-    color: #ffd700;
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #3d7a46;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ffd700;
+    color: #1f4024;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background-color: #3d7a46;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 3px solid #ffd700;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+.card {
+    background-color: #f3d97a;
+    color: #222222;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #ffd700;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1f4024;
+}
+
+.card p {
+    color: #222222;
 }
 
 footer {
@@ -51,5 +96,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    border-top: 4px solid #ffd700;
+    margin-top: 30px;
 }

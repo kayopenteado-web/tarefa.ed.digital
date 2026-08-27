@@ -1,24 +1,28 @@
 body {
-    margin: 0;
+    background-color: #f4f4f4;
+    color: #222222;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: #222;
+    margin: 0;
 }
 
 header {
-    background-color: #b5122b;
+    background-color: #b21f35;
     color: white;
     text-align: center;
     padding: 30px;
 }
 
 h1 {
-    margin: 0;
-    font-size: 38px;
+    font-size: 36px;
 }
 
-header p {
-    margin-top: 15px;
+h2 {
+    color: #b21f35;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 nav {
@@ -28,33 +32,27 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    background-color: #123d7a;
-    padding: 10px 15px;
+    background-color: #1d3f72;
+    padding: 10px;
+    border-radius: 6px;
     margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #7c1625;
 }
 
 main {
     width: 80%;
-    margin: 30px auto;
+    margin: auto;
 }
 
 section {
-    padding: 25px;
-    margin-bottom: 20px;
     background-color: white;
-}
-
-section h2 {
-    color: #b5122b;
-}
-
-section p {
-    line-height: 1.6;
-    font-size: 17px;
-}
-
-figure {
-    margin: 20px 0;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 img {
@@ -62,32 +60,33 @@ img {
     max-width: 600px;
     display: block;
     margin: auto;
+    border-radius: 12px;
 }
 
 figcaption {
     text-align: center;
+    font-size: 14px;
+    color: #333333;
     margin-top: 8px;
-    color: #123d7a;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
 }
 
 .card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    flex: 1;
+    background-color: #f3d9df;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 6px solid #b21f35;
+    border-radius: 10px;
 }
 
 .card h3 {
-    color: #123d7a;
+    margin-top: 0;
+    color: #1d3f72;
 }
 
 footer {
-    background-color: #123d7a;
+    background-color: #222222;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }

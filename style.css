@@ -18,7 +18,9 @@ h1 {
 }
 
 h2 {
-    color: #b21f35;
+    color: #1d3f72;
+    border-left: 6px solid #b21f35;
+    padding-left: 10px;
 }
 
 p {
@@ -31,8 +33,8 @@ nav {
 }
 
 nav a {
-    color: #b21f35;
-    background-color: white;
+    color: white;
+    background-color: #1d3f72;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -42,8 +44,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1d3f72;
-    color: white;
+    background-color: white;
+    color: #b21f35;
 }
 
 main {
@@ -64,7 +66,7 @@ img {
     max-width: 600px;
     display: block;
     margin: auto;
-    border: 4px solid #b21f35;
+    border: 4px solid #1d3f72;
     border-radius: 12px;
 }
 
@@ -76,23 +78,24 @@ figcaption {
 }
 
 .card {
-    background-color: #f8e8eb;
+    background-color: #f4f4f4;
     padding: 15px;
     margin: 15px 0;
     border-left: 6px solid #b21f35;
+    border-right: 6px solid #1d3f72;
     border-radius: 10px;
 }
 
 h3 {
-    color: #b21f35;
+    color: #1d3f72;
     margin-top: 0;
 }
 
 footer {
-    background-color: #b21f35;
+    background-color: #1d3f72;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    border-top: 6px solid #1d3f72;
+    border-top: 6px solid #b21f35;
 }

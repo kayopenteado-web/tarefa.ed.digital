@@ -1,28 +1,24 @@
 body {
-    background-color: white;
-    color: black;
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
 }
 
 header {
-    background-color: #b21f35;
+    background-color: #b5122b;
     color: white;
     text-align: center;
     padding: 30px;
 }
 
 h1 {
-    font-size: 36px;
+    margin: 0;
+    font-size: 38px;
 }
 
-h2 {
-    color: #b21f35;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
+header p {
+    margin-top: 15px;
 }
 
 nav {
@@ -30,22 +26,35 @@ nav {
 }
 
 nav a {
-    background-color: #1d3f72;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    background-color: #123d7a;
+    padding: 10px 15px;
     margin: 5px;
 }
 
 main {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
 }
 
 section {
+    padding: 25px;
+    margin-bottom: 20px;
     background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+}
+
+section h2 {
+    color: #b5122b;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+figure {
+    margin: 20px 0;
 }
 
 img {
@@ -57,24 +66,28 @@ img {
 
 figcaption {
     text-align: center;
-    color: #b21f35;
     margin-top: 8px;
+    color: #123d7a;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
 }
 
 .card {
-    background-color: white;
-    padding: 15px;
-    margin: 15px 0;
+    background-color: #f2f2f2;
+    padding: 20px;
+    flex: 1;
 }
 
-h3 {
-    color: #1d3f72;
+.card h3 {
+    color: #123d7a;
 }
 
 footer {
-    background-color: #1d3f72;
+    background-color: #123d7a;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
 }

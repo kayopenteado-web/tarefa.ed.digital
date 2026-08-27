@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #222222;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,18 +30,17 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     background-color: #1d3f72;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
     display: inline-block;
     border-radius: 6px;
-    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: #ffffff;
     color: #b21f35;
 }
 
@@ -51,7 +50,7 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: #ffffff;
     margin-top: 20px;
     padding: 20px;
     border-radius: 12px;
@@ -80,13 +79,13 @@ figcaption {
 }
 
 h3 {
-    color: #1d3f72;
+    color: #b21f35;
     margin-top: 0;
 }
 
 footer {
     background-color: #1d3f72;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     margin-top: 30px;

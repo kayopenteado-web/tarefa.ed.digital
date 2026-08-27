@@ -30,8 +30,8 @@ nav {
 }
 
 nav a {
-    color: white;
     background-color: #1d3f72;
+    color: white;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -44,8 +44,8 @@ main {
 
 section {
     background-color: white;
-    margin-top: 20px;
     padding: 20px;
+    margin-top: 20px;
 }
 
 img {
@@ -57,7 +57,6 @@ img {
 
 figcaption {
     text-align: center;
-    font-size: 14px;
     color: #b21f35;
     margin-top: 8px;
 }

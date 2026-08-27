@@ -1,92 +1,150 @@
-body {
-    background-color: #f4f4f4;
-    color: #222222;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1d3f72;
 }
 
 header {
-    background-color: #b21f35;
+    background: linear-gradient(
+        90deg,
+        #1d3f72,
+        #b21f35,
+        #1d3f72
+    );
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 35px 20px;
 }
 
-h1 {
-    font-size: 36px;
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-h2 {
-    color: #b21f35;
-}
-
-p {
-    font-size: 18px;
+header p {
+    max-width: 700px;
+    margin: auto;
     line-height: 1.6;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    background-color: #1d3f72;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 5px;
     display: inline-block;
+    background-color: white;
+    color: #b21f35;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #7c1625;
+    background-color: #1d3f72;
+    color: white;
 }
 
 main {
-    width: 80%;
-    margin: auto;
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
 }
 
 section {
     background-color: white;
-    margin-top: 20px;
-    padding: 20px;
+    margin-bottom: 25px;
+    padding: 30px;
     border-radius: 12px;
+    border-top: 6px solid #b21f35;
+    box-shadow: 0 3px 10px #cccccc;
 }
 
-img {
+section h2 {
+    color: #1d3f72;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-left: 6px solid #b21f35;
+    padding-left: 10px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+figure {
+    margin-top: 25px;
+}
+
+figure img {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     display: block;
     margin: auto;
-    border-radius: 12px;
+    border-radius: 10px;
+    border: 4px solid #1d3f72;
 }
 
 figcaption {
     text-align: center;
+    margin-top: 10px;
     font-size: 14px;
-    color: #333333;
-    margin-top: 8px;
+    color: #b21f35;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
-    background-color: #f3d9df;
-    padding: 15px;
-    margin: 15px 0;
-    border-left: 6px solid #b21f35;
+    flex: 1;
+    min-width: 220px;
+    background-color: #f5f5f5;
+    padding: 20px;
     border-radius: 10px;
+    border-top: 5px solid #b21f35;
+    border-bottom: 5px solid #1d3f72;
 }
 
 .card h3 {
-    margin-top: 0;
-    color: #1d3f72;
+    color: #b21f35;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
 }
 
 footer {
-    background-color: #222222;
+    background: linear-gradient(
+        90deg,
+        #1d3f72,
+        #b21f35,
+        #1d3f72
+    );
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
 }

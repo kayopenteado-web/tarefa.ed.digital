@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #1d3f72;
+    background-color: #b21f35;
     color: white;
     text-align: center;
     padding: 30px;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #1d3f72;
+    color: #b21f35;
 }
 
 p {
@@ -30,8 +30,8 @@ nav {
 }
 
 nav a {
-    color: #1d3f72;
-    background-color: white;
+    color: white;
+    background-color: #1d3f72;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -58,7 +58,7 @@ img {
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: #1d3f72;
+    color: #b21f35;
     margin-top: 8px;
 }
 

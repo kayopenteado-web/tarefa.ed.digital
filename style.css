@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #b21f35;
+    background-color: #1d3f72;
     color: white;
     text-align: center;
     padding: 30px;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #b21f35;
+    color: #1d3f72;
 }
 
 p {
@@ -30,8 +30,8 @@ nav {
 }
 
 nav a {
-    color: white;
-    background-color: #1d3f72;
+    color: #1d3f72;
+    background-color: white;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -58,12 +58,12 @@ img {
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: #555555;
+    color: #1d3f72;
     margin-top: 8px;
 }
 
 .card {
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 15px;
     margin: 15px 0;
 }

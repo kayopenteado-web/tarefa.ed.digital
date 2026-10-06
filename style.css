@@ -91,21 +91,28 @@ footer {
     margin-top: 30px;
 }
 
-button { 
+/* BOTÃO */
+button {
     background-color: #1d3f72;
     color: white;
     border: none;
-    padding: 10x 15 px;
+    padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-button:houver { 
- background-color: #7c1625;
+button:hover {
+    background-color: #7c1625;
 }
 
+/* BOTÃO CURTIR */
 .curtir {
-display: block;
-width: fit-content;
-margin: 20 px auto;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.curtir.ativo {
+    background-color: #b21f35;
 }

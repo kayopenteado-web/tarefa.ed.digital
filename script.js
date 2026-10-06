@@ -12,4 +12,4 @@ function curtir() {
         curtiu= false;
     }
 }
-};
+});

@@ -8,19 +8,22 @@
 --cor-card:#f3d9fa;
 --cor-legenda:#2912f5;
 --cor-clara:#ffffff;
---cor-rodape
+--cor-rodape:#222222;
+--cor-clara:#ffffff;
+--cor-rodape:#222222;
+
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #222222;
+    background-color:var(--cor-fundo);
+    color:var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #b21f35;
-    color: white;
+    background-color:var(--cor-pricinpal);
+    color:var(--cor-clara);
     text-align: center;
     padding: 30px;
 }
@@ -30,7 +33,7 @@ h1 {
 }
 
 h2 {
-    color: #b21f35;
+   color: var(--cor-pricinpal);
 }
 
 p {
@@ -43,7 +46,7 @@ nav {
 }
 
 nav a {
-    color: white;
+   color: var(--cor-pricinpal);
     text-decoration: none;
     background-color: #1d3f72;
     padding: 10px;
@@ -62,7 +65,7 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color:var(--cor-surperficie);
     margin-top: 20px;
     padding: 20px;
     border-radius: 12px;
@@ -97,7 +100,7 @@ figcaption {
 }
 
 footer {
-    background-color: #222222;
+    background-color:var();
     color: white;
     text-align: center;
     padding: 20px;
@@ -106,8 +109,8 @@ footer {
 
 /* BOTÃO */
 button {
-    background-color: #1d3f72;
-    color: white;
+    background-color:var(--cor-pricinpal);
+    color:var(--cor-clara);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -116,7 +119,7 @@ button {
 }
 
 button:hover {
-    background-color: #7c1625;
+    background-color:var(--cor-hover);
 }
 
 /* BOTÃO CURTIR */

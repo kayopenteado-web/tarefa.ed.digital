@@ -1,27 +1,31 @@
-:root{
---cor-fundo:#f4f1ea;
---cor-texto:#222222;
---cor-pricinpal:#b21f35;
---cor-secundaria:#f4flea;
---cor-hover:#b21f35;
---cor-surperficie:#ffffff;
---cor-card:#000fe7;
---cor-legenda:#2912f5;
---cor-clara:#f70000;
---cor-rodape:#222222;
 
+:root {
+    --cor-fundo: #f4f1ea;
+    --cor-texto: #222222;
+    --cor-principal: #b21f35;
+    --cor-secundaria: #1d3f72;
+    --cor-hover: #7c1625;
+    --cor-superficie: #ffffff;
+    --cor-card: #f3d9df;
+    --cor-legenda: #555555;
+    --cor-clara: #ffffff;
+    --cor-rodape: #222222;
 }
 
+/* CONFIGURAÇÃO GERAL */
+
 body {
-    background-color:var(--cor-fundo);
-    color:var(--cor-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
+/* CABEÇALHO */
+
 header {
-    background-color:var(--cor-pricinpal);
-    color:var(--cor-clara);
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     text-align: center;
     padding: 30px;
 }
@@ -30,44 +34,65 @@ h1 {
     font-size: 36px;
 }
 
-h2 {
-   color: var(--cor-pricinpal);
+header p {
+    max-width: 850px;
+    margin: 15px auto;
 }
+
+/* TÍTULOS */
+
+h2 {
+    color: var(--cor-principal);
+}
+
+h3 {
+    color: var(--cor-secundaria);
+}
+
+/* TEXTOS */
 
 p {
     font-size: 18px;
     line-height: 1.6;
 }
 
+/* MENU */
+
 nav {
     margin-top: 20px;
 }
 
 nav a {
-   color: var(--cor-pricinpal);
+    color: var(--cor-clara);
     text-decoration: none;
-    background-color: #1d3f72;
+    background-color: var(--cor-secundaria);
     padding: 10px;
     border-radius: 6px;
     margin: 5px;
     display: inline-block;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #7c1625;
+    background-color: var(--cor-hover);
 }
+
+/* CONTEÚDO PRINCIPAL */
 
 main {
     width: 80%;
+    max-width: 1100px;
     margin: auto;
 }
 
 section {
-    background-color:var(--cor-surperficie);
+    background-color: var(--cor-superficie);
     margin-top: 20px;
     padding: 20px;
     border-radius: 12px;
 }
+
+/* IMAGENS */
 
 img {
     width: 100%;
@@ -77,50 +102,85 @@ img {
     border-radius: 12px;
 }
 
+figure {
+    margin: 25px auto;
+}
+
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: #333333;
+    color: var(--cor-legenda);
     margin-top: 8px;
 }
 
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
 .card {
-    background-color: #f3d9df;
+    background-color: var(--cor-card);
     padding: 15px;
-    margin: 15px 0;
-    border-left: 6px solid #b21f35;
+    margin: 5px 0;
+    border-left: 6px solid var(--cor-principal);
     border-radius: 10px;
 }
 
 .card h3 {
     margin-top: 0;
-    color: #1d3f72;
+    color: var(--cor-secundaria);
 }
 
+/* GALERIA */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* RODAPÉ */
+
 footer {
-    background-color:var();
+    background-color: var(--cor-rodape);
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
 }
 
-/* BOTÃO */
+footer p {
+    font-size: 15px;
+}
+
+/* BOTÕES */
+
 button {
-    background-color:var(--cor-pricinpal);
-    color:var(--cor-clara);
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color:var(--cor-hover);
+    background-color: var(--cor-hover);
 }
 
 /* BOTÃO CURTIR */
+
 .curtir {
     display: block;
     width: fit-content;
@@ -128,5 +188,36 @@ button:hover {
 }
 
 .curtir.ativo {
-    background-color: #b21f35;
+    background-color: var(--cor-secundaria);
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 92%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cards,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
 }

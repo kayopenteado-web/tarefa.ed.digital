@@ -24,8 +24,18 @@ botoesCurtir.forEach(function(botaoCurtir) {
     });
 
 });
-const btnTema = document.querySelector("btn-tema");
-btnTema.addEventListener("click", mudarTema);
-function mudarTema(){
-    document.body.classList.toggle("tena escuro");
+
+
+const btnTema = document.querySelector(".btn-tema");
+
+if (btnTema) {
+
+    btnTema.addEventListener("click", mudarTema);
+
+}
+
+function mudarTema() {
+
+    document.body.classList.toggle("tema-escuro");
+
 }

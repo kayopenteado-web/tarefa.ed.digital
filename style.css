@@ -1,4 +1,5 @@
 
+
 :root {
     --cor-fundo: #f4f1ea;
     --cor-texto: #222222;
@@ -113,7 +114,7 @@ figcaption {
     margin-top: 8px;
 }
 
-/* CURIOSIDADES - UMA EMBAIXO DA OUTRA */
+/* CURIOSIDADES */
 
 .cards {
     display: flex;
@@ -134,7 +135,7 @@ figcaption {
     color: var(--cor-secundaria);
 }
 
-/* GALERIA - UMA IMAGEM EMBAIXO DA OUTRA */
+/* GALERIA */
 
 .galeria {
     display: flex;
@@ -196,6 +197,44 @@ button:hover {
 
 .curtir.ativo {
     background-color: var(--cor-secundaria);
+}
+
+/* BOTÃO TEMA */
+
+.btn-tema {
+    margin-top: 15px;
+}
+
+/* TEMA ESCURO */
+
+.tema-escuro {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.tema-escuro section {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.tema-escuro h2 {
+    color: #ff5268;
+}
+
+.tema-escuro h3 {
+    color: #8eb8f0;
+}
+
+.tema-escuro .card {
+    background-color: #444444;
+}
+
+.tema-escuro figcaption {
+    color: #dddddd;
+}
+
+.tema-escuro footer {
+    background-color: #111111;
 }
 
 /* RESPONSIVIDADE */

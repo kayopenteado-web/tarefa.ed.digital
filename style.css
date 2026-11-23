@@ -140,23 +140,6 @@ figcaption a {
     text-decoration: underline;
 }
 
-/* REFERÊNCIAS */
-.referencia {
-    background-color: var(--cor-card);
-    padding: 15px;
-    margin: 12px 0;
-    border-radius: 10px;
-}
-
-.referencia a {
-    color: var(--cor-secundaria);
-    text-decoration: none;
-}
-
-.referencia a:hover {
-    text-decoration: underline;
-}
-
 /* RODAPÉ */
 footer {
     background-color: var(--cor-rodape);
@@ -233,13 +216,11 @@ body.tema-escuro {
     color: #8eb8f0;
 }
 
-.tema-escuro .card,
-.tema-escuro .referencia {
+.tema-escuro .card {
     background-color: #383838;
     color: white;
 }
 
-.tema-escuro .referencia a,
 .tema-escuro figcaption a {
     color: #8eb8f0;
 }
@@ -283,4 +264,3 @@ body.tema-escuro {
         margin: 4px;
     }
 }
-

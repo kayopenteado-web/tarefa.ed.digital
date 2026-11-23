@@ -8,7 +8,6 @@
     --cor-superficie: #ffffff;
     --cor-card: #f3d9df;
     --cor-legenda: #555555;
-    --cor-clara: #ffffff;
     --cor-rodape: #222222;
 }
 
@@ -21,7 +20,7 @@ body {
 
 header {
     background-color: var(--cor-principal);
-    color: var(--cor-clara);
+    color: white;
     text-align: center;
     padding: 30px;
 }
@@ -53,7 +52,7 @@ nav {
 }
 
 nav a {
-    color: var(--cor-clara);
+    color: white;
     text-decoration: none;
     background-color: var(--cor-secundaria);
     padding: 10px;
@@ -99,6 +98,7 @@ figcaption {
     margin-top: 8px;
 }
 
+/* Curiosidades */
 .cards {
     display: flex;
     flex-direction: column;
@@ -115,9 +115,9 @@ figcaption {
 
 .card h3 {
     margin-top: 0;
-    color: var(--cor-secundaria);
 }
 
+/* Galeria */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -134,9 +134,9 @@ figcaption {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border-radius: 12px;
 }
 
+/* Referências */
 .referencia {
     background-color: var(--cor-card);
     padding: 15px;
@@ -153,6 +153,7 @@ figcaption {
     text-decoration: underline;
 }
 
+/* Rodapé */
 footer {
     background-color: var(--cor-rodape);
     color: white;
@@ -165,9 +166,10 @@ footer p {
     font-size: 15px;
 }
 
+/* Botões */
 button {
     background-color: var(--cor-principal);
-    color: var(--cor-clara);
+    color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -190,6 +192,70 @@ button:hover {
     background-color: var(--cor-secundaria);
 }
 
+/* Botão de tema igual ao modelo do professor */
+.btn-tema {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 22px;
+    z-index: 1000;
+}
+
+/* Modo escuro */
+body.tema-escuro {
+    background-color: #151515;
+    color: white;
+}
+
+.tema-escuro header {
+    background-color: #111111;
+}
+
+.tema-escuro section {
+    background-color: #252525;
+    color: white;
+}
+
+.tema-escuro h2 {
+    color: #ff5268;
+}
+
+.tema-escuro h3 {
+    color: #8eb8f0;
+}
+
+.tema-escuro .card,
+.tema-escuro .referencia {
+    background-color: #383838;
+    color: white;
+}
+
+.tema-escuro .referencia a {
+    color: #8eb8f0;
+}
+
+.tema-escuro figcaption {
+    color: #cccccc;
+}
+
+.tema-escuro footer {
+    background-color: #080808;
+}
+
+.tema-escuro nav a {
+    background-color: #333333;
+    color: white;
+}
+
+.tema-escuro nav a:hover {
+    background-color: var(--cor-principal);
+}
+
+/* Celulares */
 @media (max-width: 700px) {
     main {
         width: 92%;

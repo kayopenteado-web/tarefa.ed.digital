@@ -18,3 +18,16 @@ botoesCurtir.forEach(function(botao) {
         }
     });
 });
+
+
+function mudarTema() {
+    document.body.classList.toggle("tema-escuro");
+
+    const botao = document.querySelector("#btn-tema");
+
+    if (document.body.classList.contains("tema-escuro")) {
+        botao.textContent = "☀️";
+    } else {
+        botao.textContent = "🌙";
+    }
+}

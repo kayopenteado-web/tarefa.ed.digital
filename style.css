@@ -16,6 +16,7 @@ body {
     color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -79,26 +80,6 @@ section {
     border-radius: 12px;
 }
 
-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: auto;
-    border-radius: 12px;
-}
-
-figure {
-    margin: 25px auto;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 14px;
-    color: var(--cor-legenda);
-    margin-top: 8px;
-}
-
-/* Curiosidades */
 .cards {
     display: flex;
     flex-direction: column;
@@ -117,7 +98,6 @@ figcaption {
     margin-top: 0;
 }
 
-/* Galeria */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -134,9 +114,18 @@ figcaption {
     width: 100%;
     max-width: 600px;
     height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
 }
 
-/* Referências */
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--cor-legenda);
+    margin-top: 8px;
+}
+
 .referencia {
     background-color: var(--cor-card);
     padding: 15px;
@@ -153,7 +142,6 @@ figcaption {
     text-decoration: underline;
 }
 
-/* Rodapé */
 footer {
     background-color: var(--cor-rodape);
     color: white;
@@ -166,7 +154,6 @@ footer p {
     font-size: 15px;
 }
 
-/* Botões */
 button {
     background-color: var(--cor-principal);
     color: white;
@@ -192,20 +179,21 @@ button:hover {
     background-color: var(--cor-secundaria);
 }
 
-/* Botão de tema igual ao modelo do professor */
+/* Botão de modo escuro */
 .btn-tema {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     padding: 0;
     border-radius: 50%;
     font-size: 22px;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Modo escuro */
+/* Tema escuro */
 body.tema-escuro {
     background-color: #151515;
     color: white;
@@ -255,7 +243,6 @@ body.tema-escuro {
     background-color: var(--cor-principal);
 }
 
-/* Celulares */
 @media (max-width: 700px) {
     main {
         width: 92%;

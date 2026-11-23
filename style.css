@@ -1,13 +1,13 @@
 
 :root {
     --cor-fundo: #ffffff;
-    --cor-texto: #ffffff;
+    --cor-texto: #222222;
     --cor-principal: #003da5;
     --cor-secundaria: #b21f35;
     --cor-hover: #003080;
-    --cor-superficie: #b21f35;
-    --cor-card: #b21f35;
-    --cor-legenda: #ffffff;
+    --cor-superficie: #ffffff;
+    --cor-card: #ffffff;
+    --cor-legenda: #555555;
     --cor-clara: #ffffff;
     --cor-rodape: #003da5;
 }
@@ -44,17 +44,25 @@ h1 {
 }
 
 h2 {
-    color: #ffffff;
-    background-color: transparent;
-    padding: 0;
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 8px;
     font-size: 30px;
 }
 
 h3 {
-    color: #ffffff;
-    background-color: transparent;
-    padding: 0;
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 12px;
+    border-radius: 8px;
     font-size: 24px;
+}
+
+.tema-escuro h2,
+.tema-escuro h3 {
+    background-color: #333333;
+    color: #ffffff;
 }
 
 p {
@@ -87,7 +95,6 @@ main {
 
 section {
     background-color: var(--cor-superficie);
-    color: var(--cor-texto);
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
@@ -110,10 +117,9 @@ figcaption {
 
 .card {
     background-color: var(--cor-card);
-    color: var(--cor-texto);
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid var(--cor-principal);
+    border-left: 6px solid var(--cor-secundaria);
     border-radius: 10px;
     flex: 1 1 300px;
 }
@@ -172,22 +178,4 @@ button:hover {
     height: 50px;
     border-radius: 50%;
     font-size: 22px;
-}
-
-
-.tema-escuro h2,
-.tema-escuro h3 {
-    color: #ffffff;
-    background-color: transparent;
-}
-
-.tema-escuro section,
-.tema-escuro .card {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.tema-escuro p,
-.tema-escuro figcaption {
-    color: #ffffff;
 }

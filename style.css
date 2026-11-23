@@ -1,5 +1,4 @@
 
-
 :root {
     --cor-fundo: #f4f1ea;
     --cor-texto: #222222;
@@ -13,16 +12,12 @@
     --cor-rodape: #222222;
 }
 
-/* CONFIGURAÇÃO GERAL */
-
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
-/* CABEÇALHO */
 
 header {
     background-color: var(--cor-principal);
@@ -40,8 +35,6 @@ header p {
     margin: 15px auto;
 }
 
-/* TÍTULOS */
-
 h2 {
     color: var(--cor-principal);
 }
@@ -50,14 +43,10 @@ h3 {
     color: var(--cor-secundaria);
 }
 
-/* TEXTOS */
-
 p {
     font-size: 18px;
     line-height: 1.6;
 }
-
-/* MENU */
 
 nav {
     margin-top: 20px;
@@ -78,8 +67,6 @@ nav a:hover {
     background-color: var(--cor-hover);
 }
 
-/* CONTEÚDO PRINCIPAL */
-
 main {
     width: 80%;
     max-width: 1100px;
@@ -92,8 +79,6 @@ section {
     padding: 20px;
     border-radius: 12px;
 }
-
-/* IMAGENS */
 
 img {
     width: 100%;
@@ -114,8 +99,7 @@ figcaption {
     margin-top: 8px;
 }
 
-/* CURIOSIDADES */
-
+/* Curiosidades uma embaixo da outra */
 .cards {
     display: flex;
     flex-direction: column;
@@ -135,8 +119,7 @@ figcaption {
     color: var(--cor-secundaria);
 }
 
-/* GALERIA */
-
+/* Galeria de imagens */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -156,8 +139,24 @@ figcaption {
     border-radius: 12px;
 }
 
-/* RODAPÉ */
+/* Referências */
+.referencia {
+    background-color: var(--cor-card);
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+}
 
+.referencia a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.referencia a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
 footer {
     background-color: var(--cor-rodape);
     color: white;
@@ -170,8 +169,7 @@ footer p {
     font-size: 15px;
 }
 
-/* BOTÕES */
-
+/* Botões */
 button {
     background-color: var(--cor-principal);
     color: var(--cor-clara);
@@ -187,8 +185,6 @@ button:hover {
     background-color: var(--cor-hover);
 }
 
-/* BOTÃO CURTIR */
-
 .curtir {
     display: block;
     width: fit-content;
@@ -199,22 +195,32 @@ button:hover {
     background-color: var(--cor-secundaria);
 }
 
-/* BOTÃO TEMA */
-
 .btn-tema {
     margin-top: 15px;
 }
 
-/* TEMA ESCURO */
-
-.tema-escuro {
-    background-color: #222222;
+/* Modo escuro */
+body.tema-escuro {
+    background-color: #151515;
     color: #ffffff;
 }
 
-.tema-escuro section {
+.tema-escuro header {
+    background-color: #111111;
+}
+
+.tema-escuro nav a {
     background-color: #333333;
-    color: #ffffff;
+    color: white;
+}
+
+.tema-escuro nav a:hover {
+    background-color: var(--cor-principal);
+}
+
+.tema-escuro section {
+    background-color: #252525;
+    color: white;
 }
 
 .tema-escuro h2 {
@@ -225,22 +231,35 @@ button:hover {
     color: #8eb8f0;
 }
 
-.tema-escuro .card {
-    background-color: #444444;
+.tema-escuro .card,
+.tema-escuro .referencia {
+    background-color: #383838;
+    color: white;
+}
+
+.tema-escuro .referencia a {
+    color: #8eb8f0;
 }
 
 .tema-escuro figcaption {
-    color: #dddddd;
+    color: #cccccc;
 }
 
 .tema-escuro footer {
-    background-color: #111111;
+    background-color: #080808;
 }
 
+.tema-escuro button {
+    background-color: #1d3f72;
+    color: white;
+}
 
+.tema-escuro button:hover {
+    background-color: #b21f35;
+}
 
+/* Ajuste para celulares */
 @media (max-width: 700px) {
-
     main {
         width: 92%;
     }
@@ -260,5 +279,4 @@ button:hover {
     nav a {
         margin: 4px;
     }
-
 }

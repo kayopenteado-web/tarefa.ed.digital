@@ -13,11 +13,13 @@ botoesCurtir.forEach(function(botaoCurtir) {
 
             contador.textContent = Number(contador.textContent) + 1;
             curtiu = true;
+            botaoCurtir.classList.add("ativo");
 
         } else {
 
             contador.textContent = Number(contador.textContent) - 1;
             curtiu = false;
+            botaoCurtir.classList.remove("ativo");
 
         }
 
@@ -28,14 +30,20 @@ botoesCurtir.forEach(function(botaoCurtir) {
 
 const btnTema = document.querySelector(".btn-tema");
 
-if (btnTema) {
-
-    btnTema.addEventListener("click", mudarTema);
-
-}
+btnTema.addEventListener("click", mudarTema);
 
 function mudarTema() {
 
     document.body.classList.toggle("tema-escuro");
+
+    if (document.body.classList.contains("tema-escuro")) {
+
+        btnTema.textContent = "☀️ Mudar para tema claro";
+
+    } else {
+
+        btnTema.textContent = "🌙 Mudar para tema escuro";
+
+    }
 
 }

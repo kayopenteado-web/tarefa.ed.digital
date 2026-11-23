@@ -1,27 +1,28 @@
 
 :root {
     --cor-fundo: #ffffff;
-    --cor-texto: #003da5;
+    --cor-texto: #222222;
     --cor-principal: #003da5;
-    --cor-secundaria: #b21f35;
-    --cor-hover: #003da5;
+    --cor-secundaria: #003da5;
+    --cor-hover: #222222;
     --cor-superficie: #ffffff;
     --cor-card: #ffffff;
-    --cor-legenda: #003da5;
+    --cor-legenda: #555555;
     --cor-clara: #ffffff;
     --cor-rodape: #003da5;
 }
 
 .tema-escuro {
-    --cor-fundo: #003da5;
+    --cor-fundo: #121212;
     --cor-texto: #ffffff;
-    --cor-principal: #b21f35;
-    --cor-secundaria: #003da5;
-    --cor-superficie: #003da5;
-    --cor-card: #003da5;
+    --cor-principal: #1e1e1e;
+    --cor-secundaria: #333333;
+    --cor-hover: #444444;
+    --cor-superficie: #1e1e1e;
+    --cor-card: #252525;
     --cor-legenda: #ffffff;
     --cor-clara: #ffffff;
-    --cor-rodape: #b21f35;
+    --cor-rodape: #111111;
 }
 
 body {
@@ -43,18 +44,12 @@ h1 {
 }
 
 h2 {
-    color: var(--cor-clara);
-    background-color: #b21f35;
-    padding: 15px;
-    border-radius: 8px;
+    color: var(--cor-principal);
     font-size: 30px;
 }
 
 h3 {
-    color: var(--cor-clara);
-    background-color: #b21f35;
-    padding: 12px;
-    border-radius: 8px;
+    color: var(--cor-principal);
     font-size: 24px;
 }
 
@@ -88,6 +83,7 @@ main {
 
 section {
     background-color: var(--cor-superficie);
+    color: var(--cor-texto);
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
@@ -110,6 +106,7 @@ figcaption {
 
 .card {
     background-color: var(--cor-card);
+    color: var(--cor-texto);
     padding: 15px;
     margin: 15px 0;
     border-left: 6px solid var(--cor-principal);
@@ -136,7 +133,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-hover);
 }
 
 .curtir {
@@ -171,4 +168,16 @@ button:hover {
     height: 50px;
     border-radius: 50%;
     font-size: 22px;
+}
+
+/* MODO ESCURO */
+
+.tema-escuro h2,
+.tema-escuro h3 {
+    color: #ffffff;
+}
+
+.tema-escuro p,
+.tema-escuro figcaption {
+    color: #ffffff;
 }

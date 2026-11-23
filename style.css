@@ -84,6 +84,16 @@ section {
     border-radius: 12px;
 }
 
+/* IMAGENS DAS SEÇÕES */
+.imagem-secao {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
 /* CURIOSIDADES */
 .cards {
     display: flex;
@@ -131,13 +141,6 @@ figcaption {
     color: var(--cor-legenda);
     margin-top: 8px;
     line-height: 1.7;
-}
-
-figcaption a {
-    display: inline-block;
-    margin-top: 8px;
-    color: var(--cor-secundaria);
-    text-decoration: underline;
 }
 
 /* RODAPÉ */
@@ -219,10 +222,6 @@ body.tema-escuro {
 .tema-escuro .card {
     background-color: #383838;
     color: white;
-}
-
-.tema-escuro figcaption a {
-    color: #8eb8f0;
 }
 
 .tema-escuro figcaption {

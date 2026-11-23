@@ -1,5 +1,6 @@
 
-/* Botões de curtir */
+/* BOTÕES DE CURTIR */
+
 const botoesCurtir = document.querySelectorAll(".curtir");
 
 botoesCurtir.forEach(function(botao) {
@@ -20,10 +21,13 @@ botoesCurtir.forEach(function(botao) {
     });
 });
 
-/* Mudar entre tema claro e escuro */
+
+/* MODO CLARO E ESCURO */
+
 const botaoTema = document.querySelector("#btn-tema");
 
 botaoTema.addEventListener("click", function() {
+
     document.body.classList.toggle("tema-escuro");
 
     if (document.body.classList.contains("tema-escuro")) {
@@ -31,4 +35,5 @@ botaoTema.addEventListener("click", function() {
     } else {
         botaoTema.textContent = "🌙";
     }
+
 });

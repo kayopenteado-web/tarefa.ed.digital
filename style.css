@@ -19,6 +19,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* CABEÇALHO */
 header {
     background-color: var(--cor-principal);
     color: white;
@@ -35,6 +36,7 @@ header p {
     margin: 15px auto;
 }
 
+/* TÍTULOS E TEXTOS */
 h2 {
     color: var(--cor-principal);
 }
@@ -48,6 +50,7 @@ p {
     line-height: 1.6;
 }
 
+/* MENU */
 nav {
     margin-top: 20px;
 }
@@ -67,6 +70,7 @@ nav a:hover {
     background-color: var(--cor-hover);
 }
 
+/* CONTEÚDO */
 main {
     width: 80%;
     max-width: 1100px;
@@ -80,6 +84,7 @@ section {
     border-radius: 12px;
 }
 
+/* CURIOSIDADES */
 .cards {
     display: flex;
     flex-direction: column;
@@ -98,6 +103,7 @@ section {
     margin-top: 0;
 }
 
+/* GALERIA DE IMAGENS */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -124,8 +130,17 @@ figcaption {
     font-size: 14px;
     color: var(--cor-legenda);
     margin-top: 8px;
+    line-height: 1.7;
 }
 
+figcaption a {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+/* REFERÊNCIAS */
 .referencia {
     background-color: var(--cor-card);
     padding: 15px;
@@ -142,6 +157,7 @@ figcaption {
     text-decoration: underline;
 }
 
+/* RODAPÉ */
 footer {
     background-color: var(--cor-rodape);
     color: white;
@@ -154,6 +170,7 @@ footer p {
     font-size: 15px;
 }
 
+/* BOTÕES */
 button {
     background-color: var(--cor-principal);
     color: white;
@@ -179,7 +196,7 @@ button:hover {
     background-color: var(--cor-secundaria);
 }
 
-/* Botão de modo escuro */
+/* BOTÃO DE MODO ESCURO */
 .btn-tema {
     position: fixed;
     right: 20px;
@@ -193,7 +210,7 @@ button:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Tema escuro */
+/* TEMA ESCURO */
 body.tema-escuro {
     background-color: #151515;
     color: white;
@@ -222,7 +239,8 @@ body.tema-escuro {
     color: white;
 }
 
-.tema-escuro .referencia a {
+.tema-escuro .referencia a,
+.tema-escuro figcaption a {
     color: #8eb8f0;
 }
 
@@ -243,6 +261,7 @@ body.tema-escuro {
     background-color: var(--cor-principal);
 }
 
+/* RESPONSIVIDADE */
 @media (max-width: 700px) {
     main {
         width: 92%;
@@ -264,3 +283,4 @@ body.tema-escuro {
         margin: 4px;
     }
 }
+

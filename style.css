@@ -1,27 +1,28 @@
 
 :root {
     --cor-fundo: #ffffff;
-    --cor-texto: #003da5;
+    --cor-texto: #222222;
     --cor-principal: #003da5;
     --cor-secundaria: #b21f35;
-    --cor-hover: #003da5;
-    --cor-superficie: #b21f35;
-    --cor-card: #b21f35;
-    --cor-legenda: #ffffff;
-    --cor-clara: #ec0d0d;
+    --cor-hover: #003080;
+    --cor-superficie: #ffffff;
+    --cor-card: #ffffff;
+    --cor-legenda: #555555;
+    --cor-clara: #ffffff;
     --cor-rodape: #003da5;
 }
 
 .tema-escuro {
-    --cor-fundo: #003da5;
+    --cor-fundo: #121212;
     --cor-texto: #ffffff;
-    --cor-principal: #b21f35;
-    --cor-secundaria: #003da5;
-    --cor-superficie: #b21f35;
-    --cor-card: #b21f35;
+    --cor-principal: #222222;
+    --cor-secundaria: #333333;
+    --cor-hover: #444444;
+    --cor-superficie: #1e1e1e;
+    --cor-card: #252525;
     --cor-legenda: #ffffff;
-    --cor-clara: #ff0000;
-    --cor-rodape: #b21f35;
+    --cor-clara: #ffffff;
+    --cor-rodape: #111111;
 }
 
 body {
@@ -39,16 +40,34 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 42px;
 }
 
 h2 {
-    color: var(--cor-principal);
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+h3 {
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.tema-escuro h2,
+.tema-escuro h3 {
+    background-color: #333333;
+    color: #ffffff;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 21px;
+    line-height: 1.8;
 }
 
 nav {
@@ -91,7 +110,7 @@ img {
 
 figcaption {
     text-align: center;
-    font-size: 14px;
+    font-size: 17px;
     color: var(--cor-legenda);
     margin-top: 8px;
 }
@@ -100,21 +119,16 @@ figcaption {
     background-color: var(--cor-card);
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid var(--cor-principal);
+    border-left: 6px solid var(--cor-secundaria);
     border-radius: 10px;
     flex: 1 1 300px;
-}
-
-.card h3 {
-    margin-top: 0;
-    color: var(--cor-clara);
 }
 
 footer {
     background-color: var(--cor-rodape);
     color: var(--cor-clara);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 30px;
 }
 
@@ -122,13 +136,14 @@ button {
     background-color: var(--cor-secundaria);
     color: var(--cor-clara);
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 17px;
 }
 
 button:hover {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-hover);
 }
 
 .curtir {

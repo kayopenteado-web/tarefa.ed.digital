@@ -4,10 +4,10 @@
     --cor-texto: #003da5;
     --cor-principal: #003da5;
     --cor-secundaria: #b21f35;
-    --cor-hover: #b21f35;
-    --cor-superficie: #ffffff;
-    --cor-card: #ffffff;
-    --cor-legenda: #003da5;
+    --cor-hover: #003da5;
+    --cor-superficie: #b21f35;
+    --cor-card: #b21f35;
+    --cor-legenda: #ffffff;
     --cor-clara: #ffffff;
     --cor-rodape: #003da5;
 }
@@ -17,8 +17,8 @@
     --cor-texto: #ffffff;
     --cor-principal: #b21f35;
     --cor-secundaria: #003da5;
-    --cor-superficie: #003da5;
-    --cor-card: #003da5;
+    --cor-superficie: #b21f35;
+    --cor-card: #b21f35;
     --cor-legenda: #ffffff;
     --cor-clara: #ffffff;
     --cor-rodape: #b21f35;
@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--cor-principal);
+    background-color: var(--cor-hover);
 }
 
 main {
@@ -100,14 +100,14 @@ figcaption {
     background-color: var(--cor-card);
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid var(--cor-secundaria);
+    border-left: 6px solid var(--cor-principal);
     border-radius: 10px;
     flex: 1 1 300px;
 }
 
 .card h3 {
     margin-top: 0;
-    color: var(--cor-principal);
+    color: var(--cor-clara);
 }
 
 footer {

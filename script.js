@@ -1,74 +1,59 @@
 
-// SISTEMA DE CURTIDAS
-
 const botoesCurtir = document.querySelectorAll(".curtir");
 
-botoesCurtir.forEach((botao) => {
-    const identificador = botao.dataset.id;
-    const chaveCurtida = "parana-curtida-" + identificador;
+botoesCurtir.forEach(function(botaoCurtir, index) {
 
-    let curtido = localStorage.getItem(chaveCurtida) === "true";
-    let quantidade = Number(
-        localStorage.getItem("parana-contagem-" + identificador)
-    ) || 0;
+    const contador = botaoCurtir.querySelector("span");
+    const chave = "parana-curtidas-" + index;
+    const chaveEstado = "parana-curtido-" + index;
 
-    const contador = botao.querySelector("span");
+    let curtiu = localStorage.getItem(chaveEstado) === "true";
+    let quantidade = Number(localStorage.getItem(chave)) || 0;
 
-    function atualizarBotao() {
+    contador.textContent = quantidade;
+
+    if (curtiu) {
+        botaoCurtir.firstChild.textContent = "❤️ Curtido ";
+    }
+
+    botaoCurtir.addEventListener("click", function() {
+
+        if (curtiu === false) {
+            quantidade++;
+            curtiu = true;
+        } else {
+            quantidade--;
+            curtiu = false;
+        }
+
         contador.textContent = quantidade;
 
-        if (curtido) {
-            botao.classList.add("ativo");
-            botao.setAttribute("aria-pressed", "true");
-            botao.firstChild.textContent = "❤️ Curtido ";
+        if (curtiu) {
+            botaoCurtir.firstChild.textContent = "❤️ Curtido ";
         } else {
-            botao.classList.remove("ativo");
-            botao.setAttribute("aria-pressed", "false");
-            botao.firstChild.textContent = "❤️ Curtir ";
-        }
-    }
-
-    atualizarBotao();
-
-    botao.addEventListener("click", () => {
-        if (curtido) {
-            curtido = false;
-            quantidade = Math.max(0, quantidade - 1);
-        } else {
-            curtido = true;
-            quantidade++;
+            botaoCurtir.firstChild.textContent = "❤️ Curtir ";
         }
 
-        localStorage.setItem(chaveCurtida, curtido);
-        localStorage.setItem(
-            "parana-contagem-" + identificador,
-            quantidade
-        );
+        localStorage.setItem(chave, quantidade);
+        localStorage.setItem(chaveEstado, curtiu);
 
-        atualizarBotao();
     });
+
 });
 
 
-// MODO CLARO E ESCURO
+const btnTema = document.querySelector(".btn-tema");
 
-const botaoTema = document.querySelector("#btnTema");
+btnTema.addEventListener("click", mudarTema);
 
-if (localStorage.getItem("parana-tema") === "escuro") {
-    document.body.classList.add("tema-escuro");
-    botaoTema.textContent = "☀️ Mudar tema";
-}
+function mudarTema() {
 
-botaoTema.addEventListener("click", () => {
     document.body.classList.toggle("tema-escuro");
 
-    const temaEscuro = document.body.classList.contains("tema-escuro");
-
-    if (temaEscuro) {
-        localStorage.setItem("parana-tema", "escuro");
-        botaoTema.textContent = "☀️ Mudar tema";
+    if (document.body.classList.contains("tema-escuro")) {
+        btnTema.textContent = "☀️";
     } else {
-        localStorage.setItem("parana-tema", "claro");
-        botaoTema.textContent = "🌙 Mudar tema";
+        btnTema.textContent = "🌙";
     }
-});
+
+}

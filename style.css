@@ -1,28 +1,27 @@
 
 :root {
     --cor-fundo: #ffffff;
-    --cor-texto: #222222;
+    --cor-texto: #003da5;
     --cor-principal: #003da5;
     --cor-secundaria: #b21f35;
-    --cor-hover: #003080;
+    --cor-hover: #003da5;
     --cor-superficie: #ffffff;
     --cor-card: #ffffff;
-    --cor-legenda: #555555;
+    --cor-legenda: #003da5;
     --cor-clara: #ffffff;
     --cor-rodape: #003da5;
 }
 
 .tema-escuro {
-    --cor-fundo: #121212;
+    --cor-fundo: #003da5;
     --cor-texto: #ffffff;
-    --cor-principal: #222222;
-    --cor-secundaria: #333333;
-    --cor-hover: #444444;
-    --cor-superficie: #1e1e1e;
-    --cor-card: #252525;
+    --cor-principal: #b21f35;
+    --cor-secundaria: #003da5;
+    --cor-superficie: #003da5;
+    --cor-card: #003da5;
     --cor-legenda: #ffffff;
     --cor-clara: #ffffff;
-    --cor-rodape: #111111;
+    --cor-rodape: #b21f35;
 }
 
 body {
@@ -45,7 +44,7 @@ h1 {
 
 h2 {
     color: var(--cor-clara);
-    background-color: var(--cor-secundaria);
+    background-color: #b21f35;
     padding: 15px;
     border-radius: 8px;
     font-size: 30px;
@@ -53,16 +52,10 @@ h2 {
 
 h3 {
     color: var(--cor-clara);
-    background-color: var(--cor-secundaria);
+    background-color: #b21f35;
     padding: 12px;
     border-radius: 8px;
     font-size: 24px;
-}
-
-.tema-escuro h2,
-.tema-escuro h3 {
-    background-color: #333333;
-    color: #ffffff;
 }
 
 p {
@@ -119,7 +112,7 @@ figcaption {
     background-color: var(--cor-card);
     padding: 15px;
     margin: 15px 0;
-    border-left: 6px solid var(--cor-secundaria);
+    border-left: 6px solid var(--cor-principal);
     border-radius: 10px;
     flex: 1 1 300px;
 }
@@ -143,7 +136,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cor-hover);
+    background-color: var(--cor-principal);
 }
 
 .curtir {

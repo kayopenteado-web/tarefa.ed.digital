@@ -1,49 +1,20 @@
 
 const botoesCurtir = document.querySelectorAll(".curtir");
 
-botoesCurtir.forEach(function(botaoCurtir) {
-
+botoesCurtir.forEach(function(botao) {
     let curtiu = false;
 
-    botaoCurtir.addEventListener("click", function() {
+    botao.addEventListener("click", function() {
+        const contador = botao.querySelector("span");
 
-        const contador = botaoCurtir.querySelector("span");
-
-        if (!curtiu) {
-
+        if (curtiu === false) {
             contador.textContent = Number(contador.textContent) + 1;
             curtiu = true;
-            botaoCurtir.classList.add("ativo");
-
+            botao.classList.add("ativo");
         } else {
-
             contador.textContent = Number(contador.textContent) - 1;
             curtiu = false;
-            botaoCurtir.classList.remove("ativo");
-
+            botao.classList.remove("ativo");
         }
-
     });
-
 });
-
-
-const btnTema = document.querySelector(".btn-tema");
-
-btnTema.addEventListener("click", mudarTema);
-
-function mudarTema() {
-
-    document.body.classList.toggle("tema-escuro");
-
-    if (document.body.classList.contains("tema-escuro")) {
-
-        btnTema.textContent = "☀️ Mudar para tema claro";
-
-    } else {
-
-        btnTema.textContent = "🌙 Mudar para tema escuro";
-
-    }
-
-}

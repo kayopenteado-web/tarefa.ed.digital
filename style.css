@@ -99,7 +99,6 @@ figcaption {
     margin-top: 8px;
 }
 
-/* Curiosidades uma embaixo da outra */
 .cards {
     display: flex;
     flex-direction: column;
@@ -119,7 +118,6 @@ figcaption {
     color: var(--cor-secundaria);
 }
 
-/* Galeria de imagens */
 .galeria {
     display: flex;
     flex-direction: column;
@@ -139,7 +137,6 @@ figcaption {
     border-radius: 12px;
 }
 
-/* Referências */
 .referencia {
     background-color: var(--cor-card);
     padding: 15px;
@@ -156,7 +153,6 @@ figcaption {
     text-decoration: underline;
 }
 
-/* Rodapé */
 footer {
     background-color: var(--cor-rodape);
     color: white;
@@ -169,7 +165,6 @@ footer p {
     font-size: 15px;
 }
 
-/* Botões */
 button {
     background-color: var(--cor-principal);
     color: var(--cor-clara);
@@ -195,70 +190,6 @@ button:hover {
     background-color: var(--cor-secundaria);
 }
 
-.btn-tema {
-    margin-top: 15px;
-}
-
-/* Modo escuro */
-body.tema-escuro {
-    background-color: #151515;
-    color: #ffffff;
-}
-
-.tema-escuro header {
-    background-color: #111111;
-}
-
-.tema-escuro nav a {
-    background-color: #333333;
-    color: white;
-}
-
-.tema-escuro nav a:hover {
-    background-color: var(--cor-principal);
-}
-
-.tema-escuro section {
-    background-color: #252525;
-    color: white;
-}
-
-.tema-escuro h2 {
-    color: #ff5268;
-}
-
-.tema-escuro h3 {
-    color: #8eb8f0;
-}
-
-.tema-escuro .card,
-.tema-escuro .referencia {
-    background-color: #383838;
-    color: white;
-}
-
-.tema-escuro .referencia a {
-    color: #8eb8f0;
-}
-
-.tema-escuro figcaption {
-    color: #cccccc;
-}
-
-.tema-escuro footer {
-    background-color: #080808;
-}
-
-.tema-escuro button {
-    background-color: #1d3f72;
-    color: white;
-}
-
-.tema-escuro button:hover {
-    background-color: #b21f35;
-}
-
-/* Ajuste para celulares */
 @media (max-width: 700px) {
     main {
         width: 92%;
